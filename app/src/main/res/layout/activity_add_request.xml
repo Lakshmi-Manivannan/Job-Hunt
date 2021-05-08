@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceProvider.AddRequest"
+    android:orientation="vertical"
+    android:background="#00000000"
+    android:padding="15dp">
+
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow"
+        android:id="@+id/back_arrow" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Request Service"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:fontFamily="@font/bungee"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Location"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:boxStrokeColor="@color/app_color"
+        android:textColorHint="@color/app_color"
+        app:hintTextAppearance="@style/HintTextAppearance">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location of Service"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/radio_group"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/background_border">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type of Service"
+            android:textColor="@color/app_color"/>
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/plumbing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plumbing"
+            android:buttonTint="@color/colorPrimary"/>
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self-Care"
+            android:id="@+id/selfcare"
+            android:buttonTint="@color/colorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/laptop_service"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laptop Service"
+            android:buttonTint="@color/colorPrimary"/>
+        <RadioButton
+            android:id="@+id/chef"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chef"
+            android:buttonTint="@color/colorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/interior_design"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interior Design"
+            android:buttonTint="@color/colorPrimary"/>
+        <RadioButton
+            android:id="@+id/teaching"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teaching"
+            android:buttonTint="@color/colorPrimary"/>
+        <RadioButton
+            android:id="@+id/others"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:buttonTint="@color/colorPrimary"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Service"
+        android:layout_marginTop="40dp"
+        android:textColor="#000"
+        android:id="@+id/request_service_add"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>
